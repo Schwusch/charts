@@ -72,7 +72,7 @@ class BaseChartState<D> extends State<BaseChart<D>>
       parent: Tween(begin: 0.0, end: 1.0).animate(
         _animationController,
       ),
-      curve: Curves.bounceOut,
+      curve: Curves.easeOutExpo,
     )..addListener(_animationTick);
   }
 
